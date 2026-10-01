@@ -1,41 +1,397 @@
-<div class="pml-wrap">
+<!DOCTYPE html>
+<html lang="en" class="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO Meta Tags -->
+  <title>OmniTestPrep - Free SAT, ACT & AP Practice Exams | Flashcards & Detailed Explanations</title>
+  <meta name="description" content="Master SAT, ACT, and AP exams with free interactive quiz simulators, instant timers, detailed answer explanations, and digital flashcards.">
+  <meta name="keywords" content="sat practice test, act exam prep, ap exams review, sat flashcards, us college test prep">
+  <meta name="author" content="OmniTestPrep Editorial Team">
+  <meta name="robots" content="index, follow">
+  <meta name="geo.region" content="US">
 
-<style>
-.pml-wrap{font-family:Arial,Helvetica,sans-serif;color:#334155;max-width:920px;margin:0 auto;padding:24px 0 42px}
-.pml-hero{background:linear-gradient(135deg,#071a2b,#0f766e,#2563eb);color:#fff;border-radius:18px;padding:40px 32px;margin:8px 0 28px}
-.pml-hero h1{color:#fff!important;-webkit-text-fill-color:#fff!important;margin:0 0 10px;font-size:38px;line-height:1.15}
-.pml-hero p{color:#e0f2fe!important;margin:0;line-height:1.7}
-.pml-section{margin:28px 0}
-.pml-section h2{color:#0f172a!important;font-size:25px;margin:0 0 10px}
-.pml-section h3{color:#0f172a!important;font-size:20px;margin:22px 0 8px}
-.pml-section p,.pml-section li{line-height:1.78}
-.pml-box{background:#f8fafc;border:1px solid #e2e8f0;border-radius:14px;padding:20px}
-.pml-formula{background:#ecfdf5;border-left:4px solid #047857;border-radius:10px;padding:15px 16px;font-weight:700;color:#065f46}
-.pml-example{background:#eff6ff;border:1px solid #bfdbfe;border-radius:12px;padding:18px}
-.pml-cta{background:#0f172a;color:#fff;border-radius:14px;padding:22px;margin-top:30px}
-.pml-cta a,.pml-cta a:visited{color:#a7f3d0!important;font-weight:700}
-@media(max-width:700px){.pml-hero{padding:30px 22px}.pml-hero h1{font-size:31px}}
-</style>
+  <!-- Google Search Console & AdSense -->
+  <meta name="google-site-verification" content="google45274bc7d9133ca5" />
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2805918301542012" crossorigin="anonymous"></script>
 
-<section class="pml-hero"><h1>How to Calculate a Pay Raise</h1><p>Calculate the dollar and percentage impact of a salary increase.</p></section>
-<section class="pml-section">
-<h2>Formula</h2>
-<div class="pml-formula">New Salary = Current Salary × (1 + Raise %)</div>
-</section>
-<section class="pml-section">
-<h2>Example</h2>
-<div class="pml-example"><p>A $60,000 salary with a 5% raise becomes $63,000. The annual increase is $3,000.</p></div>
-</section>
-<section class="pml-section">
-<h2>How to use the result</h2>
-<p>This calculation is useful for compensation comparisons, budgeting, payroll planning, and understanding the relationship between different forms of pay. The most useful result is one based on realistic working hours, pay periods, and compensation assumptions.</p>
-</section>
-<section class="pml-section pml-box">
-<h2>Practical tips</h2><ul><li>Compare both percentage and dollar change.</li><li>For monthly budgeting, divide the annual increase by 12.</li><li>Gross salary changes do not equal take-home pay changes.</li></ul>
-</section>
-<section class="pml-section">
-<h2>Important limitation</h2>
-<p>Payroll calculations can be affected by employment agreements, employer policies, tax rules, benefit structures, and local laws. PayrollMetricsLab provides educational estimates and general information only.</p>
-</section>
-<div class="pml-cta">Try the related free calculator in the <a href="/p/calculators-hub.html">PayrollMetricsLab Calculators Hub</a>.</div>
-</div>
+  <!-- Favicon SVG -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎯</text></svg>">
+
+  <!-- Google Font: Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Plus Jakarta Sans', 'sans-serif'] },
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      background: linear-gradient(135deg, #eef2ff 0%, #e0e7ff 50%, #c7d2fe 100%);
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+    html.dark body {
+      background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 50%, #311042 100%);
+      color: #f8fafc;
+    }
+    .pastel-card {
+      background: rgba(255, 255, 255, 0.88);
+      backdrop-filter: blur(16px);
+      border: 1px solid rgba(224, 231, 255, 0.9);
+      box-shadow: 0 10px 40px -12px rgba(99, 102, 241, 0.15);
+      transition: all 0.3s ease;
+    }
+    html.dark .pastel-card {
+      background: rgba(30, 41, 59, 0.8);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      box-shadow: 0 10px 40px -12px rgba(0, 0, 0, 0.5);
+    }
+    .gradient-text {
+      background: linear-gradient(135deg, #4f46e5 0%, #6366f1 50%, #8b5cf6 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .perspective { perspective: 1000px; }
+    .transform-style { transform-style: preserve-3d; }
+    .backface-hidden { backface-visibility: hidden; }
+    .rotate-y-180 { transform: rotateY(180deg); }
+  </style>
+</head>
+<body class="font-sans min-h-screen flex flex-col antialiased text-slate-800 dark:text-slate-100">
+
+  <!-- TOP NAVBAR -->
+  <header class="sticky top-0 z-50 bg-white/70 dark:bg-slate-900/80 backdrop-blur-md border-b border-indigo-100 dark:border-slate-800 px-6 py-4">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3 group">
+        <div class="w-10 h-10 rounded-2xl bg-gradient-to-tr from-indigo-600 via-violet-600 to-purple-600 flex items-center justify-center font-black text-xl text-white shadow-md shadow-indigo-200 dark:shadow-none transition-transform group-hover:scale-105">
+          🎯
+        </div>
+        <span class="text-xl font-extrabold tracking-tight text-slate-800 dark:text-white">Omni<span class="gradient-text">TestPrep</span></span>
+      </a>
+
+      <div class="flex items-center gap-3">
+        <div class="flex gap-1.5 p-1 bg-slate-100 dark:bg-slate-800 rounded-xl text-xs font-bold">
+          <button onclick="switchMode('quiz')" id="modeQuizBtn" class="px-4 py-1.5 rounded-lg bg-indigo-600 text-white transition shadow">Quiz Simulator</button>
+          <button onclick="switchMode('flashcard')" id="modeFlashBtn" class="px-4 py-1.5 rounded-lg text-slate-600 dark:text-slate-300 hover:bg-white dark:hover:bg-slate-700 transition">Flashcards</button>
+        </div>
+        <button onclick="toggleDarkMode()" class="p-2.5 rounded-2xl bg-white/50 dark:bg-slate-800 text-slate-600 dark:text-amber-400 hover:bg-white dark:hover:bg-slate-700 transition shadow-inner">
+          <span id="themeIcon">🌙</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN APP CONTAINER -->
+  <main class="max-w-4xl mx-auto px-6 py-10 flex-1 w-full space-y-8">
+    
+    <!-- HEADER HERO -->
+    <div class="text-center space-y-3">
+      <span class="text-xs font-bold uppercase tracking-widest text-indigo-700 dark:text-indigo-300 bg-indigo-100/50 dark:bg-indigo-950 px-4 py-1.5 rounded-full border border-indigo-200 dark:border-indigo-800 inline-block shadow-sm">US College Entrance Masterclass</span>
+      <h1 class="text-3xl md:text-5xl font-black tracking-tight text-slate-900 dark:text-white">
+        Practice Smarter, <span class="gradient-text">Score Higher.</span>
+      </h1>
+      <p class="text-slate-600 dark:text-slate-400 text-sm md:text-base max-w-xl mx-auto font-medium">
+        Select your exam subject below, test your skills under timed conditions, and review detailed answer breakdowns.
+      </p>
+    </div>
+
+    <!-- SUBJECT SELECTOR BAR -->
+    <div id="subjectBar" class="flex flex-wrap justify-center gap-2">
+      <button onclick="selectSubject('satMath')" id="sub-satMath" class="px-4 py-2 rounded-xl text-xs font-extrabold bg-indigo-600 text-white shadow-md transition">SAT Math</button>
+      <button onclick="selectSubject('satRead')" id="sub-satRead" class="px-4 py-2 rounded-xl text-xs font-extrabold bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-indigo-100 dark:border-slate-700 transition">SAT Reading</button>
+      <button onclick="selectSubject('actExam')" id="sub-actExam" class="px-4 py-2 rounded-xl text-xs font-extrabold bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-indigo-100 dark:border-slate-700 transition">ACT Practice</button>
+      <button onclick="selectSubject('apExams')" id="sub-apExams" class="px-4 py-2 rounded-xl text-xs font-extrabold bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-indigo-100 dark:border-slate-700 transition">AP Exams</button>
+    </div>
+
+    <!-- QUIZ SIMULATOR VIEW -->
+    <div id="quizView" class="pastel-card p-8 md:p-10 rounded-3xl space-y-6">
+      <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center border-b border-indigo-100 dark:border-slate-700 pb-4 gap-3">
+        <div>
+          <h2 id="subjectTitle" class="font-extrabold text-base text-slate-900 dark:text-white">SAT Math Practice</h2>
+          <p class="text-xs text-slate-500">Timed interactive examination simulator</p>
+        </div>
+        <div class="flex items-center gap-3">
+          <span id="timerBox" class="text-xs font-bold bg-amber-100 text-amber-800 dark:bg-amber-950 dark:text-amber-300 px-3 py-1.5 rounded-full border border-amber-200">⏱️ 02:00</span>
+          <span id="qCount" class="text-xs font-bold bg-indigo-100 dark:bg-indigo-950 text-indigo-700 dark:text-indigo-300 px-3 py-1.5 rounded-full">1 of 3</span>
+        </div>
+      </div>
+
+      <div id="quizBox" class="space-y-6">
+        <h3 id="qText" class="font-bold text-lg text-slate-800 dark:text-slate-100"></h3>
+        <div id="optsBox" class="space-y-3"></div>
+      </div>
+
+      <!-- EXPLANATION BANNER (SHOWS AFTER ANSWERING) -->
+      <div id="explanationBox" class="hidden p-5 rounded-2xl bg-indigo-50/70 dark:bg-slate-900/80 border border-indigo-200 dark:border-indigo-900 space-y-2">
+        <div class="flex items-center gap-2 font-bold text-xs text-indigo-700 dark:text-indigo-300">
+          <span>💡</span> Detailed Answer Explanation (Featured Snippet Guide):
+        </div>
+        <p id="explanationText" class="text-xs md:text-sm text-slate-600 dark:text-slate-300 leading-relaxed"></p>
+        <button onclick="nextQuestion()" class="mt-3 bg-indigo-600 hover:bg-indigo-700 text-white font-extrabold px-6 py-2.5 rounded-xl text-xs transition">Next Question →</button>
+      </div>
+
+      <div id="resBox" class="hidden text-center space-y-6 py-6">
+        <div class="text-5xl">🏆</div>
+        <h3 class="text-2xl font-black text-slate-900 dark:text-white">Test Session Finished!</h3>
+        <p id="scoreText" class="text-slate-600 dark:text-slate-300 font-medium text-sm"></p>
+        <button onclick="restartQuiz()" class="bg-indigo-600 hover:bg-indigo-700 text-white font-extrabold px-8 py-3.5 rounded-2xl text-xs transition shadow-lg shadow-indigo-500/30">Retake Quiz</button>
+      </div>
+    </div>
+
+    <!-- FLASHCARD MODE VIEW (HIDDEN INITIALLY) -->
+    <div id="flashcardView" class="hidden pastel-card p-8 md:p-10 rounded-3xl space-y-8 text-center">
+      <div class="flex justify-between items-center border-b border-indigo-100 dark:border-slate-700 pb-4">
+        <h2 class="font-extrabold text-base text-slate-900 dark:text-white">🧠 Digital Flashcard Study Mode</h2>
+        <span id="fcCount" class="text-xs font-bold bg-violet-100 dark:bg-violet-950 text-violet-700 dark:text-violet-300 px-3 py-1.5 rounded-full">Card 1 of 4</span>
+      </div>
+
+      <div class="perspective w-full h-64 flex items-center justify-center cursor-pointer" onclick="flipCard()">
+        <div id="cardInner" class="relative w-full h-full duration-500 transform-style shadow-xl rounded-3xl bg-white dark:bg-slate-900 border border-indigo-100 dark:border-slate-700 flex items-center justify-center p-8">
+          <div id="cardFront" class="absolute inset-0 flex flex-col items-center justify-center p-6 backface-hidden space-y-3">
+            <span class="text-xs font-bold text-indigo-500 uppercase tracking-widest">Concept / Term</span>
+            <h3 id="fcFrontText" class="text-xl md:text-2xl font-black text-slate-800 dark:text-white"></h3>
+            <span class="text-[11px] text-slate-400 mt-4 animate-pulse">Click card to flip ⟳</span>
+          </div>
+          <div id="cardBack" class="absolute inset-0 flex flex-col items-center justify-center p-6 backface-hidden rotate-y-180 bg-indigo-600 text-white rounded-3xl space-y-3">
+            <span class="text-xs font-bold text-indigo-200 uppercase tracking-widest">Definition & Formula</span>
+            <p id="fcBackText" class="text-sm md:text-base font-medium leading-relaxed"></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex justify-center gap-4 pt-2">
+        <button onclick="prevCard()" class="px-6 py-3 rounded-xl bg-slate-200 dark:bg-slate-800 font-bold text-xs hover:bg-slate-300 transition">← Previous</button>
+        <button onclick="nextCard()" class="px-6 py-3 rounded-xl bg-indigo-600 text-white font-bold text-xs hover:bg-indigo-700 transition shadow-md">Next Card →</button>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-indigo-100 dark:border-slate-800 bg-white/50 dark:bg-slate-900/50 py-8 text-center text-xs text-slate-500 dark:text-slate-400 font-medium mt-12">
+    <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4">
+      <p>© 2026 OmniTestPrep. All rights reserved.</p>
+      <div class="flex gap-6">
+        <a href="privacy.html" class="hover:text-slate-800 dark:hover:text-white transition">Privacy Policy</a>
+        <a href="terms.html" class="hover:text-slate-800 dark:hover:text-white transition">Terms of Service</a>
+        <a href="contact.html" class="hover:text-slate-800 dark:hover:text-white transition">Contact Us</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- SCRIPT LOGIC -->
+  <script>
+    function toggleDarkMode() {
+      if (document.documentElement.classList.contains('dark')) {
+        document.documentElement.classList.remove('dark');
+        document.documentElement.classList.add('light');
+        document.getElementById('themeIcon').innerText = '🌙';
+      } else {
+        document.documentElement.classList.remove('light');
+        document.documentElement.classList.add('dark');
+        document.getElementById('themeIcon').innerText = '☀️';
+      }
+    }
+
+    // Question Database for Subjects
+    const questionBank = {
+      satMath: [
+        { q: "If 3x + 5 = 20, what is the value of x?", options: ["3", "5", "7", "15"], answer: 1, explanation: "Subtract 5 from both sides to get 3x = 15, then divide by 3 to find x = 5." },
+        { q: "What is the area of a circle with a radius of 6 inches?", options: ["12π sq in", "24π sq in", "36π sq in", "72π sq in"], answer: 2, explanation: "The area formula for a circle is A = πr². Substituting r = 6 gives A = π(6²) = 36π." },
+        { q: "If f(x) = 2x² - 3x + 1, what is f(3)?", options: ["10", "16", "22", "28"], answer: 0, explanation: "Substitute x = 3: f(3) = 2(9) - 3(3) + 1 = 18 - 9 + 1 = 10." }
+      ],
+      satRead: [
+        { q: "Which word best completes: 'The politician's speech was so ___ that citizens grew suspicious of hidden motives.'", options: ["candid", "equivocal", "lucid", "concise"], answer: 1, explanation: "'Equivocal' means ambiguous or open to multiple interpretations, which naturally arouses suspicion in political contexts." },
+        { q: "What is the primary purpose of paragraph 2 in a persuasive passage?", options: ["To introduce a counterargument", "To provide statistical evidence supporting the thesis", "To conclude the essay", "To describe a personal anecdote"], answer: 1, explanation: "Standard SAT reading passages typically use mid-section paragraphs to supply empirical data or research validation." }
+      ],
+      actExam: [
+        { q: "Which gas makes up the majority of Earth's atmosphere?", options: ["Oxygen", "Carbon Dioxide", "Nitrogen", "Hydrogen"], answer: 2, explanation: "Earth's atmosphere is composed of approximately 78% nitrogen, 21% oxygen, and 1% other trace gases." },
+        { q: "Identify the grammatically correct sentence structure:", options: ["Neither the students nor the teacher were ready.", "Neither the students nor the teacher was ready.", "Neither the students was ready nor the teacher.", "Were the students and teacher ready?"], answer: 1, explanation: "In English grammar rules with 'neither/nor', the verb agrees with the subject closest to it (the singular 'teacher' requires 'was')." }
+      ],
+      apExams: [
+        { q: "In AP US History, what was the primary significance of the Northwest Ordinance of 1787?", options: ["It ended the Revolutionary War", "It established a process for admitting new states and banned slavery in the territory", "It doubled the size of the United States", "It established the Federal Reserve"], answer: 1, explanation: "The Northwest Ordinance created a orderly system for western settlement and prohibited slavery north of the Ohio River." }
+      ]
+    };
+
+    const flashcards = [
+      { front: "Quadratic Formula", back: "x = (-b ± √(b² - 4ac)) / 2a — Used to find roots of second-order polynomial equations." },
+      { front: "Mitosis vs. Meiosis", back: "Mitosis produces 2 identical diploid somatic cells; Meiosis produces 4 genetically diverse haploid gametes." },
+      { front: "Photosynthesis Equation", back: "6CO₂ + 6H₂O + Light Energy → C₆H₁₂O₆ (Glucose) + 6O₂." },
+      { front: "Oxymoron", back: "A figure of speech containing words that seem to contradict each other (e.g., 'deafening silence')." }
+    ];
+
+    let currentSubject = 'satMath';
+    let idx = 0, score = 0;
+    let timerInterval;
+    let timeLeft = 120; // 2 minutes timer
+
+    function selectSubject(subj) {
+      currentSubject = subj;
+      idx = 0;
+      score = 0;
+      
+      // Update subject button styles
+      ['satMath', 'satRead', 'actExam', 'apExams'].forEach(s => {
+        let btn = document.getElementById(`sub-${s}`);
+        if(s === subj) {
+          btn.className = "px-4 py-2 rounded-xl text-xs font-extrabold bg-indigo-600 text-white shadow-md transition";
+        } else {
+          btn.className = "px-4 py-2 rounded-xl text-xs font-extrabold bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-indigo-100 dark:border-slate-700 transition";
+        }
+      });
+
+      document.getElementById('subjectTitle').innerText = subj.toUpperCase().replace(/([A-Z])/g, ' $1');
+      resetTimer();
+      loadQ();
+    }
+
+    function resetTimer() {
+      clearInterval(timerInterval);
+      timeLeft = 120;
+      updateTimerDisplay();
+      timerInterval = setInterval(() => {
+        timeLeft--;
+        updateTimerDisplay();
+        if(timeLeft <= 0) {
+          clearInterval(timerInterval);
+          finishQuiz();
+        }
+      }, 1000);
+    }
+
+    function updateTimerDisplay() {
+      let m = Math.floor(timeLeft / 60);
+      let s = timeLeft % 60;
+      document.getElementById('timerBox').innerText = `⏱️ ${m.toString().padStart(2,'0')}:${s.toString().padStart(2,'0')}`;
+    }
+
+    function loadQ() {
+      let questions = questionBank[currentSubject];
+      if (idx >= questions.length) {
+        finishQuiz();
+        return;
+      }
+      let q = questions[idx];
+      document.getElementById('qCount').innerText = `${idx + 1} of ${questions.length}`;
+      document.getElementById('qText').innerText = q.q;
+      document.getElementById('explanationBox').classList.add('hidden');
+      document.getElementById('quizBox').classList.remove('hidden');
+
+      let box = document.getElementById('optsBox');
+      box.innerHTML = '';
+      q.options.forEach((opt, i) => {
+        let btn = document.createElement('button');
+        btn.className = "w-full text-left p-4 rounded-2xl bg-white dark:bg-slate-900 border border-indigo-100 dark:border-slate-700 hover:bg-indigo-50 dark:hover:bg-slate-800 hover:border-indigo-300 font-medium text-sm transition shadow-sm";
+        btn.innerText = opt;
+        btn.onclick = () => checkAnswer(i, q.answer, q.explanation);
+        box.appendChild(btn);
+      });
+    }
+
+    function checkAnswer(selected, correct, explanation) {
+      if (selected === correct) score++;
+      
+      // Disable options and show explanation
+      let buttons = document.getElementById('optsBox').getElementsByTagName('button');
+      for(let i=0; i<buttons.length; i++) {
+        buttons[i].disabled = true;
+        if(i === correct) buttons[i].classList.add('bg-emerald-100', 'dark:bg-emerald-950', 'border-emerald-400');
+        else if(i === selected) buttons[i].classList.add('bg-rose-100', 'dark:bg-rose-950', 'border-rose-400');
+      }
+
+      document.getElementById('explanationText').innerText = explanation;
+      document.getElementById('explanationBox').classList.remove('hidden');
+    }
+
+    function nextQuestion() {
+      idx++;
+      loadQ();
+    }
+
+    function finishQuiz() {
+      clearInterval(timerInterval);
+      let questions = questionBank[currentSubject];
+      document.getElementById('quizBox').classList.add('hidden');
+      document.getElementById('explanationBox').classList.add('hidden');
+      document.getElementById('resBox').classList.remove('hidden');
+      document.getElementById('scoreText').innerText = `You scored ${score} out of ${questions.length} correct in your ${currentSubject.toUpperCase()} session!`;
+    }
+
+    function restartQuiz() {
+      idx = 0;
+      score = 0;
+      document.getElementById('resBox').classList.add('hidden');
+      document.getElementById('quizBox').classList.remove('hidden');
+      resetTimer();
+      loadQ();
+    }
+
+    // Mode Switcher (Quiz vs Flashcard)
+    function switchMode(mode) {
+      if(mode === 'quiz') {
+        document.getElementById('quizView').classList.remove('hidden');
+        document.getElementById('subjectBar').classList.remove('hidden');
+        document.getElementById('flashcardView').classList.add('hidden');
+        document.getElementById('modeQuizBtn').className = "px-4 py-1.5 rounded-lg bg-indigo-600 text-white transition shadow";
+        document.getElementById('modeFlashBtn').className = "px-4 py-1.5 rounded-lg text-slate-600 dark:text-slate-300 hover:bg-white dark:hover:bg-slate-700 transition";
+      } else {
+        document.getElementById('quizView').classList.add('hidden');
+        document.getElementById('subjectBar').classList.add('hidden');
+        document.getElementById('flashcardView').classList.remove('hidden');
+        document.getElementById('modeFlashBtn').className = "px-4 py-1.5 rounded-lg bg-violet-600 text-white transition shadow";
+        document.getElementById('modeQuizBtn').className = "px-4 py-1.5 rounded-lg text-slate-600 dark:text-slate-300 hover:bg-white dark:hover:bg-slate-700 transition";
+        loadCard();
+      }
+    }
+
+    // Flashcard Logic
+    let fcIdx = 0;
+    let isFlipped = false;
+
+    function loadCard() {
+      let card = flashcards[fcIdx];
+      document.getElementById('fcCount').innerText = `Card ${fcIdx + 1} of ${flashcards.length}`;
+      document.getElementById('fcFrontText').innerText = card.front;
+      document.getElementById('fcBackText').innerText = card.back;
+      if(isFlipped) flipCard();
+    }
+
+    function flipCard() {
+      let inner = document.getElementById('cardInner');
+      if(isFlipped) {
+        inner.style.transform = 'rotateY(0deg)';
+        isFlipped = false;
+      } else {
+        inner.style.transform = 'rotateY(180deg)';
+        isFlipped = true;
+      }
+    }
+
+    function nextCard() {
+      fcIdx = (fcIdx + 1) % flashcards.length;
+      loadCard();
+    }
+
+    function prevCard() {
+      fcIdx = (fcIdx - 1 + flashcards.length) % flashcards.length;
+      loadCard();
+    }
+
+    // Initialize initial quiz view
+    selectSubject('satMath');
+  </script>
+</body>
+</html>
