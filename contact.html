@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" class="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - OmniTestPrep</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-50 dark:bg-slate-900 text-slate-800 dark:text-slate-100 font-sans min-h-screen flex flex-col antialiased">
+  <header class="border-b border-slate-200 dark:border-slate-800 px-6 py-4 bg-white/70 dark:bg-slate-900/80 backdrop-blur-md">
+    <div class="max-w-4xl mx-auto flex justify-between items-center">
+      <a href="index.html" class="font-extrabold text-xl">Omni<span class="text-indigo-600">TestPrep</span></a>
+      <a href="index.html" class="text-xs font-bold text-indigo-600 hover:underline">← Back to Home</a>
+    </div>
+  </header>
+  <main class="max-w-4xl mx-auto px-6 py-12 flex-1 space-y-6">
+    <h1 class="text-3xl font-black">Contact Us</h1>
+    <p class="text-sm text-slate-600 dark:text-slate-300">Have questions regarding our practice questions or exam resources? Get in touch with our team.</p>
+    <div class="bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 p-8 rounded-3xl max-w-lg space-y-4 shadow-sm">
+      <div>
+        <label class="text-xs font-bold text-slate-500 block mb-1">Your Email</label>
+        <input type="email" placeholder="student@example.com" class="w-full bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-xl p-3 text-xs focus:outline-none">
+      </div>
+      <div>
+        <label class="text-xs font-bold text-slate-500 block mb-1">Message</label>
+        <textarea rows="4" placeholder="How can we help your test preparation?" class="w-full bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-xl p-3 text-xs focus:outline-none"></textarea>
+      </div>
+      <button onclick="alert('Thank you! Your message has been sent.')" class="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 rounded-xl text-xs transition">Send Message</button>
+    </div>
+  </main>
+  <footer class="border-t border-slate-200 dark:border-slate-800 py-6 text-center text-xs text-slate-400">
+    © 2026 OmniTestPrep. All rights reserved.
+  </footer>
+</body>
+</html>

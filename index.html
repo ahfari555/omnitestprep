@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en" class="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO Meta Tags -->
+  <title>OmniTestPrep - Free SAT & ACT Practice Test Hub | US Exam Prep</title>
+  <meta name="description" content="Prepare for US standardized exams like SAT and ACT with free interactive practice questions, detailed explanations, and instant score tracking.">
+  <meta name="keywords" content="sat practice test, act exam prep, free sat questions, us standardized tests, online quiz hub">
+  <meta name="author" content="OmniTestPrep Editorial Team">
+  <meta name="robots" content="index, follow">
+  <meta name="geo.region" content="US">
+
+  <!-- Google Search Console Verification Tag -->
+  <meta name="google-site-verification" content="google45274bc7d9133ca5" />
+
+  <!-- Google AdSense Script -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2805918301542012" crossorigin="anonymous"></script>
+
+  <!-- Favicon SVG -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎯</text></svg>">
+
+  <!-- Google Font: Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Plus Jakarta Sans', 'sans-serif'] },
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      background: linear-gradient(135deg, #eef2ff 0%, #e0e7ff 50%, #c7d2fe 100%);
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+    html.dark body {
+      background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 50%, #311042 100%);
+      color: #f8fafc;
+    }
+    .pastel-card {
+      background: rgba(255, 255, 255, 0.85);
+      backdrop-filter: blur(16px);
+      border: 1px solid rgba(224, 231, 255, 0.8);
+      box-shadow: 0 10px 40px -12px rgba(99, 102, 241, 0.15);
+      transition: all 0.3s ease;
+    }
+    html.dark .pastel-card {
+      background: rgba(30, 41, 59, 0.75);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      box-shadow: 0 10px 40px -12px rgba(0, 0, 0, 0.5);
+    }
+    .gradient-text {
+      background: linear-gradient(135deg, #4f46e5 0%, #6366f1 50%, #8b5cf6 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  </style>
+</head>
+<body class="font-sans min-h-screen flex flex-col antialiased text-slate-800 dark:text-slate-100">
+
+  <!-- TOP NAVBAR -->
+  <header class="sticky top-0 z-50 bg-white/70 dark:bg-slate-900/80 backdrop-blur-md border-b border-indigo-100 dark:border-slate-800 px-6 py-4">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3 group">
+        <div class="w-10 h-10 rounded-2xl bg-gradient-to-tr from-indigo-600 via-violet-600 to-purple-600 flex items-center justify-center font-black text-xl text-white shadow-md shadow-indigo-200 dark:shadow-none transition-transform group-hover:scale-105">
+          🎯
+        </div>
+        <span class="text-xl font-extrabold tracking-tight text-slate-800 dark:text-white">Omni<span class="gradient-text">TestPrep</span></span>
+      </a>
+
+      <div class="flex items-center gap-3">
+        <span class="hidden sm:inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full text-xs font-semibold bg-emerald-50 dark:bg-emerald-950 text-emerald-700 dark:text-emerald-300 border border-emerald-200 dark:border-emerald-800 shadow-sm">
+          <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse"></span> 100% Free US Exam Prep
+        </span>
+        <button onclick="toggleDarkMode()" class="p-3 rounded-2xl bg-white/50 dark:bg-slate-800 text-slate-600 dark:text-amber-400 hover:bg-white dark:hover:bg-slate-700 transition shadow-inner">
+          <span id="themeIcon">🌙</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN APP CONTAINER -->
+  <main class="max-w-4xl mx-auto px-6 py-12 flex-1 w-full space-y-10">
+    <div class="text-center space-y-4">
+      <span class="text-xs font-bold uppercase tracking-widest text-indigo-700 dark:text-indigo-300 bg-indigo-100/50 dark:bg-indigo-950 px-4 py-1.5 rounded-full border border-indigo-200 dark:border-indigo-800 inline-block shadow-sm">SAT & ACT Practice Hub</span>
+      <h1 class="text-3xl md:text-5xl font-black tracking-tight text-slate-900 dark:text-white">
+        Test Your Knowledge, <span class="gradient-text">Ace Your Exams.</span>
+      </h1>
+      <p class="text-slate-600 dark:text-slate-400 text-sm md:text-base max-w-xl mx-auto font-medium leading-relaxed">
+        Interactive practice questions designed for US students aiming for top scores in standardized college entrance tests.
+      </p>
+    </div>
+
+    <!-- QUIZ CARD -->
+    <div class="pastel-card p-8 md:p-10 rounded-3xl space-y-6">
+      <div class="flex justify-between items-center border-b border-indigo-100 dark:border-slate-700 pb-4">
+        <h2 id="qTitle" class="font-extrabold text-base text-slate-900 dark:text-white">SAT Math & Critical Reading Practice</h2>
+        <span id="qCount" class="text-xs font-bold bg-indigo-100 dark:bg-indigo-950 text-indigo-700 dark:text-indigo-300 px-3.5 py-1.5 rounded-full">Question 1 of 3</span>
+      </div>
+
+      <div id="quizBox" class="space-y-6">
+        <h3 id="qText" class="font-bold text-lg text-slate-800 dark:text-slate-100"></h3>
+        <div id="optsBox" class="space-y-3"></div>
+      </div>
+
+      <div id="resBox" class="hidden text-center space-y-6 py-6">
+        <div class="text-5xl">🎉</div>
+        <h3 class="text-2xl font-black text-slate-900 dark:text-white">Practice Session Completed!</h3>
+        <p id="scoreText" class="text-slate-600 dark:text-slate-300 font-medium"></p>
+        <button onclick="location.reload()" class="bg-indigo-600 hover:bg-indigo-700 text-white font-extrabold px-8 py-3.5 rounded-2xl text-xs transition shadow-lg shadow-indigo-500/30">Take New Test</button>
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-indigo-100 dark:border-slate-800 bg-white/50 dark:bg-slate-900/50 py-8 text-center text-xs text-slate-500 dark:text-slate-400 font-medium mt-12">
+    <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4">
+      <p>© 2026 OmniTestPrep. All rights reserved.</p>
+      <div class="flex gap-6">
+        <a href="privacy.html" class="hover:text-slate-800 dark:hover:text-white transition">Privacy Policy</a>
+        <a href="terms.html" class="hover:text-slate-800 dark:hover:text-white transition">Terms of Service</a>
+        <a href="contact.html" class="hover:text-slate-800 dark:hover:text-white transition">Contact Us</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- SCRIPT LOGIC -->
+  <script>
+    function toggleDarkMode() {
+      if (document.documentElement.classList.contains('dark')) {
+        document.documentElement.classList.remove('dark');
+        document.documentElement.classList.add('light');
+        document.getElementById('themeIcon').innerText = '🌙';
+      } else {
+        document.documentElement.classList.remove('light');
+        document.documentElement.classList.add('dark');
+        document.getElementById('themeIcon').innerText = '☀️';
+      }
+    }
+
+    const questions = [
+      { q: "If 3x + 5 = 20, what is the value of x?", options: ["3", "5", "7", "15"], answer: 1 },
+      { q: "Which of the following is a primary function of cellular mitochondria?", options: ["Protein synthesis", "Energy production (ATP)", "Cell division", "Waste disposal"], answer: 1 },
+      { q: "Choose the word that best completes the sentence: 'Her explanation was so ___ that everyone understood immediately.'", options: ["ambiguous", "lucid", "convoluted", "obscure"], answer: 1 }
+    ];
+
+    let idx = 0, score = 0;
+
+    function loadQ() {
+      if (idx >= questions.length) {
+        document.getElementById('quizBox').classList.add('hidden');
+        document.getElementById('resBox').classList.remove('hidden');
+        document.getElementById('scoreText').innerText = `You scored ${score} out of ${questions.length} correct! Great job on your test preparation.`;
+        return;
+      }
+      let q = questions[idx];
+      document.getElementById('qCount').innerText = `Question ${idx + 1} of ${questions.length}`;
+      document.getElementById('qText').innerText = q.q;
+      let box = document.getElementById('optsBox');
+      box.innerHTML = '';
+      q.options.forEach((opt, i) => {
+        let btn = document.createElement('button');
+        btn.className = "w-full text-left p-4 rounded-2xl bg-white dark:bg-slate-900 border border-indigo-100 dark:border-slate-800 hover:bg-indigo-50 dark:hover:bg-slate-800 hover:border-indigo-300 font-medium text-sm transition shadow-sm";
+        btn.innerText = opt;
+        btn.onclick = () => { if(i === q.answer) score++; idx++; loadQ(); };
+        box.appendChild(btn);
+      });
+    }
+    loadQ();
+  </script>
+</body>
+</html>
